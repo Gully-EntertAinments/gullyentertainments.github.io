@@ -1,4 +1,4 @@
-
+s
   *{
     margin: 0;
  padding: 0;
@@ -198,6 +198,7 @@ button a {
 }
 
 
+
 .slide-container{
     max-width: 1120px;
     width: 100%;
@@ -300,7 +301,6 @@ border-radius: 6px;
 margin: 14px;
 transition: all 0.3s ease;
 cursor: pointer;
-
 }
 
 .social{
