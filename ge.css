@@ -197,8 +197,6 @@ button a {
 
 }
 
-
-
 .slide-container{
     max-width: 1120px;
     width: 100%;
@@ -206,19 +204,39 @@ button a {
     padding: 40px 0;
 }
 
+
 .slide-content{
     
-margin: 0 40px;
-
-overflow: hidden;
-border-radius: 25px;
-}
+    margin: 0 40px;
+    
+    overflow: hidden;
+    border-radius: 25px;
+    }
+    
 .card{
    
   
     border-radius: 25px;
 background-color: #fff
 }
+
+.card-image{
+
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+.card-image .card-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #12b6df;
+}
+
 .image-content, .card-content{
     display: flex;
     flex-direction: column;
@@ -240,6 +258,7 @@ background-color: #fff
     background-color: #12b6df;
     border-radius: 25px 25px 0 25px;
 }
+
 .overlay::before, .overlay::after{
     content: '';
     position: absolute;
@@ -254,22 +273,6 @@ background-color: #fff
     border-radius: 0 25px 0 0;
     background-color: #fff;
 }
-.card-image{
-
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 3px;
-}
-.card-image .card-image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #12b6df;
-}
 
 .name{
     font-size: 18px;
@@ -277,12 +280,12 @@ background-color: #fff
     color: #12b6df;
 }
 .card-content p{
-    height: 80px;
+    height: 65px;
     
 }
+
 .description{
     
-    padding-top: 5px;
     font-size: 14px;
     font-weight: 500;
     color: black;
@@ -302,6 +305,35 @@ margin: 14px;
 transition: all 0.3s ease;
 cursor: pointer;
 }
+.swiper-navBtn{
+    color: #12b6df;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #000;
+}
+.swiper-navBtn::before, .swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #12b6df;
+    opacity: 1;
+
+}
+.swiper-pagination-bullet-active{
+    background-color: #000;
+}
+
+
+
+
+
 
 .social{
     display: none;
@@ -334,31 +366,6 @@ cursor: pointer;
 
 
 
-
-.swiper-navBtn{
-    color: #12b6df;
-    transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-    color: #000;
-}
-.swiper-navBtn::before, .swiper-navBtn::after{
-    font-size: 40px;
-}
-.swiper-button-next{
-    right: 0;
-}
-.swiper-button-prev{
-    left: 0;
-}
-.swiper-pagination-bullet{
-    background-color: #12b6df;
-    opacity: 1;
-
-}
-.swiper-pagination-bullet-active{
-    background-color: #000;
-}
 
 
 
@@ -606,7 +613,7 @@ text-align: center;
     }
     .content{
         font-size: 16px;
-        padding: 10px;
+        
 
     }
     .content h1{
@@ -629,12 +636,12 @@ text-align: center;
     }
     nav ul{
         
-        top: 0;
+        top: -20%;
     left: -100%;
      position: absolute;
         background-color: rgba(12, 96,221, 0.20);
        backdrop-filter: blur(20px);
-        width: 100%;
+        width: 80%;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -679,7 +686,7 @@ text-align: center;
     }
     .toggle-btn{
        display: flex;
-       margin-right: 0;
+       margin-right: 10%;
      
 
     }
@@ -762,6 +769,9 @@ text-align: center;
     font-size: 40px;
     font-weight: bold;
     transition: 1s;
+  }
+  .container .pop img{
+    width: 200px;
   }
 }
 
