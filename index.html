@@ -332,27 +332,22 @@ function(event) {
      const buttons = document.querySelectorAll('#button');
 
 buttons.forEach(button => {
-  button.addEventListener('mouseover', function() {
+  button.addEventListener('click', function() {
   this.innerText = 'Instagram';
    window.location.href = this.getAttribute('href');
 })
 });
 
 
- const button = document.querySelectorAll('#button');
 
-button.forEach(button => {
- 
-});
 
  const button2 = document.querySelector('#button2');
 
-  button2.addEventListener('mouseover', function() {
+  button2.addEventListener('click', function() {
   this.innerText = 'Facebook';
+  window.location.href = this.getAttribute('href');
 });
-button2.addEventListener('mouseout', function() {
-  this.innerText = 'View More';
-});
+
 
  
 
