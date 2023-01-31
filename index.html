@@ -334,14 +334,8 @@ function(event) {
 buttons.forEach(button => {
   button.addEventListener('mouseover', function() {
   this.innerText = 'Instagram';
+   window.location.href = this.getAttribute('href');
 })
-button.addEventListener('mouseout', function() {
-  this.innerText = 'View More';
-})
- button.addEventListener('click', function(event) {
-   event.preventDefault();
-    window.location.href = this.getAttribute('href');
- })
 });
 
 
