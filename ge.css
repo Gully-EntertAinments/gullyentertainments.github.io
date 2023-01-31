@@ -42,9 +42,10 @@ s
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px ;
+    padding: 10px ;
     width: 100%;
     z-index: 2;
+    
     transition: background 0.5s, color 0.5s;
 }
 .logo{
@@ -151,7 +152,7 @@ button:hover{
     border: none;
 }
 button a {
-    color: var(--text-color);
+    color: #fff;
     text-decoration: none;
 }
 .toggle-btn{
@@ -344,7 +345,7 @@ cursor: pointer;
        
        margin-right: 5px;
        margin-left: 5px;
-       color:#000;
+       color:var(--text-color);
        display: inline-block ;
        transition: transform 0.5s;
 
